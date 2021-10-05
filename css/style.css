@@ -1,0 +1,133 @@
+ /* Estilos base */
+
+ /* Fuentes de google fonts */
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+/* Fuente desde un archivo */
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url(/files/proxima-nova-bold.otf);
+}
+
+ :root {
+     /* Colores */
+     --primary-color     : #2A8BF4;
+     --primary-color-alt : #035DBF;
+     --title-color       : #121F26;
+     --text-color        : #676F73;
+     --body-bg-color     : #FAFDFF;
+     --white-color       : #FFFFFF;
+     --color             : var(--primary-color);
+     --color-alt         : var(--primary-color-alt);
+
+     /* Fuentes */
+     --body-font  : 'Open Sans', sans-serif;
+     --title-font : 'Proxima Nova Rg', sans-serif;
+
+     /* Anchura máxima del contenido en desktop */
+     --max-width : 1200px;
+
+     /* Tamaños */ 
+     --header-height     : 3rem; 
+     --section-spacing   : 4rem; 
+     --block-spacing     : 2rem; 
+     --body-line-height  : 1.6; 
+     --title-line-height : 1.3;
+
+     /* Tamaños de fuentes */ 
+     --h1-font-size     : 2rem; 
+     --h2-font-size     : 1.5rem; 
+     --h3-font-size     : 1.25rem; 
+     --h4-font-size     : 1rem; 
+     --big-font-size    : 1rem; 
+     --normal-font-size : 0.875rem; 
+     --small-font-size  : 0.75rem; 
+     --smaller-font-size: 0.6875rem;
+
+     /* Capas */ 
+     --z-back       : -10; 
+     --z-normal     : 1; 
+     --z-front      : 10; 
+     --Z-tooltip    : 20; 
+     --Z-overlay    : 30; 
+     --z-modal      : 40; 
+     --Z-fixed      : 50; 
+     --z-off-canvas : 100;
+
+     /* Otros */ 
+     --border-radius: 0.5rem; 
+     --box-shadow   : 0 2px 2px rgba(36, 47, 66, 0.1);
+ }
+
+ @media screen and (min-width: 1024px) {
+    /* Variables de tamaño en desktop */ 
+    :root { 
+        --header-height     : 4rem; 
+        --section-spacing   : 8rem; 
+        --block-spacing     : 4rem; 
+        --h1-font-size      : 3rem; 
+        --h2-font-size      : 2rem; 
+        --h3-font-size      : 1.5rem; 
+        --h4-font-size      : 1.25rem; 
+        --big-font-size     : 1.25rem; 
+        --normal-font-size  : 1rem; 
+        --small-font-size   : 0.875rem; 
+        --smaller-font-size : 0.75rem;
+    }
+}
+
+body { 
+    display: flex; 
+    flex-direction: column; 
+    min-height: calc(100vh - var(--header-height)); 
+    color: var(--text-color); 
+    padding-top : var(--header-height); 
+    font-family : var(--body-font); 
+    font-size: var(--normal-font-size); 
+    line-height : var(--body-line-height); 
+    background-color : var(--body-bg-color);
+}
+
+a {
+    color: var(--primary-color);
+}
+
+p {
+    margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    color: var(--title-color);
+    font-family: var(--title-font);
+    line-height: var(--title-line-height);
+    font-weight: 800;
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+}
+
+h4 {
+    font-size: var(--h4-font-size);
+}
+
+.main h1 {
+    margin-bottom: var(--block-spacing);
+    padding-top  : var(--block-spacing);
+}
+
+.content-wrapper {
+    width       : calc(100% - 2rem);
+    max-width   : var(--max-width);
+    margin-left : 1rem;
+    margin-right: 1rem;
+}
