@@ -7,7 +7,7 @@
     <!-- Normalize -->
     <link rel="stylesheet" href="/css/normalize.css">
     <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
     <!-- JAM icons -->
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     <title>Inicio | RSoft</title>
@@ -15,12 +15,12 @@
 <body>
 
     <!-- Cabecera (Logo y menú de navegación) -->
-    <header>
-         <div>
+    <header class="main-header">
+        <div class="content-wrapper">
              <a href="/">
                 <img src="/images/logo.png" alt="Logo RSoft" width="32">
             </a>
-            <nav>
+            <nav class="main-menu">
                 <ul>
                     <li>
                         <a href="/">Inicio</a>
@@ -41,59 +41,57 @@
 
     <main>
 
-        <!-- Baner principal -->
-        <section>
-            <div>
-                <div>
-                    <h1>Bienvenidos a RSoft</h1>
-                    <p>Necesitas asesoramiento urgente!!! Nosotros te podemos ayudar en la construcción de tu sitio web.</p>
-                    <div>
+        <!-- Banner principal -->
+        <section class="main-banner section-container">
+            <div class="content-wrapper content">
+                <div class="container">
+                    <h1 class="title">Bienvenidos a RSoft</h1>
+                    <p class="subtitle">Necesitas asesoramiento urgente!!! Nosotros te podemos ayudar en la construcción de tu sitio web.</p>
+                    <div class="button white">
                         <a href="/contacto.html">Escribemos ya mismo!</a>
                     </div>
                 </div>
-                <div>
+                <div class="container">
                     <img src="/images/computer.png" alt="Computadora RSoft">
                 </div>
             </div>
         </section>
 
         <!-- Nuestros servicios -->
-        <section>
-            <div>
-                <h2>Nuestros servicios</h1>
-                <div>
-                    <article>
-                        <span class="jam jam-phone"></span>
-                        <h3>Servicio 1</h3>
-                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</P>
-                    </article>
-                    <article>
-                        <span class="jam jam-computer"></span>
-                        <h3>Servicio 2</h3>
-                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</P>
-                    </article>
-                    <article>
-                        <span class="jam jam-keyboard"></span>
-                        <h3>Servicio 3</h3>
-                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</P>
-                    </article>
-                </div>
+        <section class="services-section section-cont">
+            <h2>Nuestros servicios</h1>
+            <div class="content-wrapper">
+                <article class="service-item">
+                    <span class="jam jam-phone"></span>
+                    <h3>Servicio 1</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</P>
+                </article>
+                <article class="service-item">
+                    <span class="jam jam-computer"></span>
+                    <h3>Servicio 2</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</P>
+                </article>
+                <article class="service-item">
+                    <span class="jam jam-ke yboard"></span>
+                    <h3>Servicio 3</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</P>
+                </article>
             </div>
         </section>
 
         <!-- Sobre nosotros -->
-        <section>
-            <div>
-                <h2>Sobre nosotros</h2>
+        <section class="about-section section-container">
+            <div class="content-wrapper">
+                <h2 class="title">Sobre nosotros</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a href="/proyectos.html">Ver experiencia</a>
+                <a href="/proyectos.html" class="button white ghost">Ver experiencia</a>
             </div>
-            <img src="" alt="">
+            <img class="background" src="..." alt="">
         </section>
-
+  
         <!-- últimos proyectos -->
-        <section>
-            <div>
+        <section class="main-banner section-container">
+            <div class="content-wrapper content">
                 <h2>últimos proyectos</h2>
                 <div>
                     <a href="">
@@ -133,8 +131,8 @@
         </section>
 
         <!-- Trabajar con nosotros -->
-        <section>
-            <div>
+        <section class="main-banner section-container">
+            <div class="content-wrapper content">
                 <h2>¿Quieres trabajas con nosotros?</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat libero ducimus recusandae. Reiciendis, beatae ipsa! Enim explicabo omnis, ullam itaque, modi repellat, nostrum qui aliquam</br>aliquid amet exercitationem dolor ea:</p>
                 <a href="mailto:contacto@rsoft.pe">contacto@rsoft.pe</a>
